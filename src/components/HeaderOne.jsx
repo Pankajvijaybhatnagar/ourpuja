@@ -14,7 +14,7 @@ const HeaderOne = () => {
 
 
   useEffect(() => {
-    console.log("config",config)
+    // console.log("config",config)
     if (typeof window !== "undefined") {
       const handleScroll = () => {
         setScroll(window.pageYOffset > 150);
