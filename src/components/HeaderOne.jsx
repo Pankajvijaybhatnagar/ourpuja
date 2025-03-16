@@ -4,10 +4,17 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import query from "jquery";
+
+import config from "@/config/conf";
+
+
 const HeaderOne = () => {
   let pathname = usePathname();
   const [scroll, setScroll] = useState(false);
+
+
   useEffect(() => {
+    console.log("config",config)
     if (typeof window !== "undefined") {
       const handleScroll = () => {
         setScroll(window.pageYOffset > 150);
